@@ -1,0 +1,105 @@
+@media (min-width: 992px) {
+  /*lg用*/
+  .btn {
+    position: absolute;
+    width: 200px;
+    height: 55px;
+    left: 24px;
+    top: 24px;
+    border-radius: 0px;
+
+    background: #000000;
+    transition: ease 0.2s;
+    .btn1 {
+      position: absolute;
+      height: 20px;
+      width: 52px;
+      left: 74px;
+      top: 17.5px;
+      border-radius: 0px;
+
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20.27px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #ffffff;
+    }
+  }
+  .btn:hover {
+    background-color: #442606;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 0px) {
+  /*xs用*/
+  .btn {
+    position: absolute;
+    width: 180px;
+    height: 45px;
+    left: 24px;
+    top: 29px;
+    background: #000000;
+
+    transition: ease 0.2s;
+    border-radius: 0px;
+    .btn1 {
+      position: absolute;
+      height: 20px;
+      width: 52px;
+      left: 64px;
+      top: 12.5px;
+      border-radius: 0px;
+
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20.27px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #ffffff;
+    }
+  }
+  .btn:hover {
+    background-color: #442606;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  /*md用*/
+  .btn {
+    position: absolute;
+    width: 150px;
+    height: 55px;
+    left: 24px;
+    top: 24px;
+    background: #000000;
+    transition: ease 0.2s;
+    .btn1 {
+      position: absolute;
+      height: 20px;
+      width: 52px;
+      left: 49px;
+      top: 17.5px;
+      border-radius: 0px;
+
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20.27x;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #ffffff;
+    }
+  }
+  .btn:hover {
+    background-color: #442606;
+    color: #ffffff;
+  }
+}
