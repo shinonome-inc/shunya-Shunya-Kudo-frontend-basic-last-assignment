@@ -1,0 +1,27 @@
+.f1 {
+  position: absolute;
+  height: 204px;
+  width: 327px;
+  left: 24px;
+  top: 24px;
+  border-radius: 0px;
+  padding: 52px, 20px, 52px, 20px;
+
+  .t1 {
+    position: absolute;
+    height: 64px;
+    width: 287px;
+    left: 20px;
+    top: 52px;
+    border-radius: 0px;
+    padding: 0px, 0px, 10px, 0px;
+    justify: space-between;
+    //styleName: XL/mincho/LH-1.5;
+    font-family: Noto Serif JP;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
