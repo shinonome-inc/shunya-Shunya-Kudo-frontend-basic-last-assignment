@@ -1,3 +1,5 @@
+@use "../../variables" as *;
+
 .btn {
   position: absolute;
   width: 200px;
@@ -29,7 +31,7 @@
   color: #ffffff;
 }
 
-@include media-breakpoint-down(md) {
+@media (max-width: $breakpoint-md) {
   .btn {
     width: 150px;
     height: 55px;
@@ -39,8 +41,7 @@
     }
   }
 }
-
-@include media-breakpoint-down(sm) {
+@media (max-width: $breakpoint-sm) {
   .btn {
     position: absolute;
     width: 180px;
