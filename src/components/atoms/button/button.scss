@@ -1,56 +1,38 @@
 @use "../../variables" as *;
 
-.btn {
-  position: absolute;
+.atoms-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 55px;
-  left: 24px;
-  top: 24px;
   border-radius: 0px;
-  background: #000000;
+  background-color: $black;
   transition: ease 0.2s;
-  .btn1 {
-    position: absolute;
-    height: 20px;
-    width: 52px;
-    left: 74px;
-    top: 17.5px;
-    border-radius: 0px;
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20.27px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #ffffff;
-  }
+  color: $white;
+  font-family: $fontfamily-mincho;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20.27px;
+  letter-spacing: 0em;
 }
-.btn:hover {
-  background-color: #442606;
-  color: #ffffff;
+
+.atoms-button:hover {
+  background-color: $orange_bistre;
+  color: $white;
+}
+
+@media (max-width: $breakpoint-lg) {
+  .atoms-button {
+    width: 150px;
+    height: 55px;
+  }
 }
 
 @media (max-width: $breakpoint-md) {
-  .btn {
-    width: 150px;
-    height: 55px;
-    .btn1 {
-      position: absolute;
-      left: 49px;
-    }
-  }
-}
-@media (max-width: $breakpoint-sm) {
-  .btn {
-    position: absolute;
+  .atoms-button {
     width: 180px;
     height: 45px;
-    top: 29px;
-    .btn1 {
-      position: absolute;
-      left: 64px;
-      top: 12.5px;
-    }
   }
 }
