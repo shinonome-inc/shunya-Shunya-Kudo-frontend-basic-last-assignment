@@ -1,53 +1,39 @@
 @use "../../variables" as *;
 /*lg用*/
-.message:nth-of-type(1) {
+.message-f {
   height: 204px;
-  width: 327px;
-
-  .message:nth-of-type(1) {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .message-title {
     height: 54px;
-    width: 287px;
-    padding-top: 52px;
-    padding-bottom: 20px;
+    margin-bottom: 10px;
     font-family: $fontfamily-mincho;
     font-size: $fontsize-xl;
-    font-weight: 400;
     line-height: 54px;
     letter-spacing: 0em;
   }
-  .message:nth-of-type(2) {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  .message-text {
     height: 36px;
-    width: 287px;
-    padding: 0px 101.5px;
     font-family: $fontfamily-mincho;
     font-size: $fontsize-s;
-    font-weight: 400;
     line-height: 36px;
     letter-spacing: 0em;
   }
 }
 /*md用*/
 @media (max-width: $breakpoint-md) {
-  .message:nth-of-type(1) {
+  .message-f {
     height: 128px;
-    width: 200px;
-    .message:nth-of-type(1) {
+    .message-title {
       height: 36px;
-      width: 160px;
-      padding: 0px, 0px, 6px, 0px;
+      margin-bottom: 6px;
       font-size: $fontsize-l;
       line-height: 30px;
     }
-    .message:nth-of-type(2) {
+    .message-text {
       height: 28px;
-      width: 160px;
-      padding: 0px 38px;
       line-height: 28px;
     }
   }
