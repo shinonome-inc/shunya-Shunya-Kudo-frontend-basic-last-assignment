@@ -10,9 +10,7 @@
   background-color: $black;
   transition: ease 0.2s;
   color: $white;
-  font-family: $fontfamily-mincho;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $fontfamily-gothic;
   font-size: $fontsize-s;
   line-height: 20.27px;
   letter-spacing: 0em;
@@ -21,6 +19,7 @@
 .atoms-button:hover {
   background-color: $orange_bistre;
   color: $white;
+  text-decoration: none;
 }
 
 @media (max-width: $breakpoint-lg) {
