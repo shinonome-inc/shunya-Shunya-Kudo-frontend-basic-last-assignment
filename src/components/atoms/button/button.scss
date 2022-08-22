@@ -10,26 +10,22 @@
   background-color: $black;
   transition: ease 0.2s;
   color: $white;
-  font-family: $fontfamily-gothic;
   font-size: $fontsize-s;
-  line-height: 20.27px;
-  letter-spacing: 0em;
-}
 
-.atoms-button:hover {
-  background-color: $orange_bistre;
-  color: $white;
-  text-decoration: none;
+  &:hover {
+    background-color: $orange_bistre;
+    color: $white;
+    text-decoration: none;
+  }
 }
-
-@media (max-width: $breakpoint-lg) {
+@media (max-width: $breakpoint-md) {
   .atoms-button {
     width: 150px;
     height: 55px;
   }
 }
 
-@media (max-width: $breakpoint-md) {
+@media (max-width: $breakpoint-sm) {
   .atoms-button {
     width: 180px;
     height: 45px;
