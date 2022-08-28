@@ -12,27 +12,28 @@
       }
     }
   }
-  .card-title::before {
-    content: "";
-    top: 0;
-    left: 0;
-    border-bottom: 150px solid transparent;
-    border-left: 150px solid $white;
-    position: absolute;
-    z-index: 100;
-  }
-  .card-title::after {
-    content: "card-title";
-    display: block;
-    color: $orange_bistre;
-    position: absolute;
-    top: 0;
-    left: 4px;
-    margin-left: 2px;
-    z-index: 101;
-    font-size: $fontsize-l;
-    font-weight: 700;
-    line-height: 29px;
+  .card-title {
+    margin: 0;
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      border-bottom: 150px solid transparent;
+      border-left: 150px solid $white;
+      position: absolute;
+    }
+    &:after {
+      content: "card-title";
+      display: block;
+      color: $orange_bistre;
+      position: absolute;
+      top: 0;
+      left: 4px;
+      margin-left: 2px;
+      font-size: $fontsize-l;
+      font-weight: 700;
+      line-height: 29px;
+    }
   }
 }
 
