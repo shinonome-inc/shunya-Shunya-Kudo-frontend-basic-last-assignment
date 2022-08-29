@@ -42,10 +42,12 @@
   align-items: center;
   flex-direction: column;
   background-color: $white_smoke;
+  padding: 32px;
   .card-text {
     font-size: $fontsize-s;
     line-height: 33px;
     text-align: left;
     margin-bottom: 0;
+    padding-bottom: 30px;
   }
 }
