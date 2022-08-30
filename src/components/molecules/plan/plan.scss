@@ -1,11 +1,77 @@
+@use "../../variables" as *;
+
 .molecules-plan {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /*grid使って中央寄せはtext-alignでcenterにする？*/
-  .plan-sum {
+  flex-direction: row;
+  .plan {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+  }
+  .plan-text,
+  .plan-content {
+    margin-bottom: 0;
+  }
+  .plan:nth-of-type(even) {
+    outline: 5px solid $orange_bistre;
+    outline-offset: -5px;
+    .plan-text:nth-of-type(1) {
+      background-color: $orange_bistre;
+    }
+  }
+  .plan-text {
+    background-color: $orange_zorba;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    color: $white;
+    padding: 20px 8px;
+  }
+  .plan-price {
+    border: 1px solid $gray_gainsboro;
+    background-color: $gray_desertStorm;
+    padding: 24px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .money-frame {
+      color: $orange_bistre;
+      padding: 0px 0px 16px;
+      .money-unit {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: left;
+        top: 29px;
+      }
+      .plan-money {
+        left: 16px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 58px;
+        text-align: left;
+      }
+    }
+    .plan-period {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .plan-content {
+    padding: 20px 10px;
+    border: 1px solid $gray_gainsboro;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: $breakpoint-md) {
+  .molecules-plan {
+    flex-direction: column;
+    .plan {
+      margin-bottom: 24px;
+    }
   }
 }
