@@ -1,0 +1,53 @@
+@use "../../variables" as *;
+
+.card-img {
+  overflow: hidden;
+  border-radius: 0;
+  .card-img-top {
+    transition: ease 0.5s;
+    &:hover {
+      transform: scale(1.2);
+      @media (max-width: $breakpoint-sm) {
+        transform: none;
+      }
+    }
+  }
+  .card-title {
+    margin: 0;
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      border-bottom: 150px solid transparent;
+      border-left: 150px solid $white;
+      position: absolute;
+    }
+    &:after {
+      content: "card-title";
+      display: block;
+      color: $orange_bistre;
+      position: absolute;
+      top: 0;
+      left: 4px;
+      margin-left: 2px;
+      font-size: $fontsize-l;
+      font-weight: 700;
+      line-height: 29px;
+    }
+  }
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $white_smoke;
+  padding: 32px;
+  .card-text {
+    font-size: $fontsize-s;
+    line-height: 33px;
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
+}
