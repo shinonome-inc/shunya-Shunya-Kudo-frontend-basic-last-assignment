@@ -1,22 +1,8 @@
 @use "../../variables" as *;
 
 .molecules-plan {
-  display: flex;
-  flex-direction: row;
-  .plan {
-    display: flex;
-    flex-direction: column;
-  }
-  .plan-text,
-  .plan-content {
-    margin-bottom: 0;
-  }
-  .plan:nth-of-type(even) {
-    outline: 5px solid $orange_bistre;
-    outline-offset: -5px;
-    .plan-text:nth-of-type(1) {
-      background-color: $orange_bistre;
-    }
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 24px;
   }
   .plan-text {
     background-color: $orange_zorba;
@@ -26,6 +12,7 @@
     line-height: 29px;
     color: $white;
     padding: 20px 8px;
+    margin-bottom: 0;
   }
   .plan-price {
     border: 1px solid $gray_gainsboro;
@@ -35,7 +22,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     .money-frame {
       color: $orange_bistre;
       padding: 0px 0px 16px;
@@ -43,7 +29,6 @@
         font-size: 20px;
         font-weight: 700;
         line-height: 29px;
-        text-align: left;
         top: 29px;
       }
       .plan-money {
@@ -51,7 +36,6 @@
         font-size: 40px;
         font-weight: 700;
         line-height: 58px;
-        text-align: left;
       }
     }
     .plan-period {
@@ -65,13 +49,14 @@
     font-size: 14px;
     line-height: 20px;
     text-align: center;
+    border-top: 0;
+    margin-bottom: 0;
   }
 }
-@media (max-width: $breakpoint-md) {
-  .molecules-plan {
-    flex-direction: column;
-    .plan {
-      margin-bottom: 24px;
-    }
+.molecules-plan:nth-of-type(even) {
+  outline: 5px solid $orange_bistre;
+  outline-offset: -5px;
+  .plan-text:nth-of-type(1) {
+    background-color: $orange_bistre;
   }
 }
