@@ -12,6 +12,7 @@
     .news-card {
       & > a {
         height: 85px;
+        text-decoration: none;
         .news-caption {
           background-color: $white;
           border: 1px solid $gray_gainsboro;
