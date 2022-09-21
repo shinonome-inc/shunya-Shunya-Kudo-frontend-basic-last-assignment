@@ -1,0 +1,110 @@
+@use "../../variables" as *;
+
+.navbar {
+  background-color: $black;
+  padding: 0;
+  @media (min-width: $breakpoint-xl) {
+    height: 90px;
+    width: 100%;
+    background-color: $black_50;
+    padding: 0 30px;
+  }
+  .hamberger-header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 16px;
+    @media (min-width: $breakpoint-xl) {
+      margin: 0;
+    }
+    & > a > .img-switch {
+      height: 20.55944061279297px;
+      width: 120px;
+      @media (min-width: $breakpoint-xl) {
+        height: 23.986011505126953px;
+        width: 140px;
+      }
+    }
+    .navbar-toggler {
+      @media (min-width: $breakpoint-xl) {
+        display: none;
+      }
+    }
+  }
+  & > .collapse > ul > li > .nav-link {
+    color: $white;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 16px 15px;
+    margin: 0;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+    @media (min-width: $breakpoint-xl) {
+      padding: 0 20px;
+    }
+  }
+  & > .collapse > ul > li > .mini-hamberger-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    & > .nav-link {
+      color: $white;
+      margin: 0;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 16px 15px;
+      @media (min-width: $breakpoint-xl) {
+        padding: 0 20px;
+      }
+      &:hover {
+        @media (min-width: $breakpoint-xl) {
+          color: $gray_nobel;
+        }
+      }
+    }
+  }
+  & > .collapse > ul > li > .dropdown-menu {
+    background-color: $black;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    @media (min-width: $breakpoint-xl) {
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .dropdown-item {
+      color: $white;
+      padding: 15px 28px;
+      font-size: 14px;
+      line-height: 20px;
+      transition: ease 0.2s;
+      @media (min-width: $breakpoint-xl) {
+        padding: 18px;
+      }
+      &:hover {
+        background-color: $black;
+        @media (min-width: $breakpoint-xl) {
+          background-color: $orange_bistre;
+        }
+      }
+    }
+  }
+  & > .collapse > ul > .nav-item:hover {
+    @media (min-width: $breakpoint-xl) {
+      .dropdown-menu {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        margin-top: 35px;
+      }
+    }
+  }
+}
