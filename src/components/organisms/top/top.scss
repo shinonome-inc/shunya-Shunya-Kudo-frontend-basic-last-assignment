@@ -1,0 +1,36 @@
+@use "../../variables" as *;
+.top {
+  .top-mini {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .image-top {
+      width: 100%;
+      height: 100%;
+      @media (max-width: $breakpoint-md) {
+        height: 360px;
+      }
+    }
+    .top-image-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: $fontfamily-mincho;
+      font-size: 36px;
+      line-height: 52px;
+      text-align: left;
+      color: $white;
+      writing-mode: vertical-rl;
+      margin: 0;
+      @media (max-width: $breakpoint-md) {
+        font-size: 20px;
+        line-height: 29px;
+      }
+    }
+  }
+  .molecules-message {
+    background-color: $black;
+    color: $white;
+  }
+}
