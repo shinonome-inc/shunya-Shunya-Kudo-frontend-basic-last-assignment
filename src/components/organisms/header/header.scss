@@ -28,7 +28,6 @@
       }
     }
     .navbar-toggler {
-      height: 50px;
       @media (min-width: $breakpoint-xl) {
         display: none;
       }
@@ -38,7 +37,7 @@
     color: $white;
     font-size: 14px;
     line-height: 20px;
-    padding: 16px 15px;
+    padding: 15px 16px;
     margin: 0;
     &:hover {
       color: $white;
@@ -65,7 +64,7 @@
       margin: 0;
       font-size: 14px;
       line-height: 20px;
-      padding: 16px 15px;
+      padding: 15px 16px;
       @media (min-width: $breakpoint-xl) {
         padding: 35px 20px;
         transition: ease 0.2s;
@@ -75,9 +74,6 @@
           color: $gray_nobel;
         }
       }
-    }
-    & > .navbar-toggler {
-      height: 50px;
     }
   }
   & > .collapse > ul > li > .dropdown-menu {
