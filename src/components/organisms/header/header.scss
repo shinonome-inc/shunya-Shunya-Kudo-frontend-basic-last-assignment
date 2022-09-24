@@ -53,6 +53,13 @@
       }
     }
   }
+  & > .collapsing > ul > li > .nav-link {
+    color: $white;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px 16px;
+    margin: 0;
+  }
   & > .collapse > ul > li > .mini-hamberger-header {
     width: 100%;
     display: flex;
@@ -74,6 +81,20 @@
           color: $gray_nobel;
         }
       }
+    }
+  }
+  & > .collapsing > ul > li > .mini-hamberger-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    & > .nav-link {
+      color: $white;
+      margin: 0;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 15px 16px;
     }
   }
   & > .collapse > ul > li > .dropdown-menu {
