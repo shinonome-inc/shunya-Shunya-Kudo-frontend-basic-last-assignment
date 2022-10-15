@@ -8,6 +8,12 @@
     width: 100%;
     background-color: $black_50;
     padding: 0 30px;
+    position: relative;
+    & > .collapse {
+      position: absolute;
+      top: 0;
+      right: 15px;
+    }
   }
   .hamberger-header {
     height: 60px;
@@ -33,141 +39,134 @@
       }
     }
   }
-  & > .collapse > ul > li > .nav-link {
-    color: $white;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 15px 16px;
-    margin: 0;
-    &:hover {
-      color: $white;
-      text-decoration: none;
-    }
-    @media (min-width: $breakpoint-xl) {
-      padding: 35px 20px;
-      transition: ease 0.2s;
-      &:hover {
-        @media (min-width: $breakpoint-xl) {
-          color: $gray_nobel;
-        }
-      }
-    }
-  }
-  & > .collapsing > ul > li > .nav-link {
-    color: $white;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 15px 16px;
-    margin: 0;
-  }
-  & > .collapse > ul > li > .mini-hamberger-header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    & > .nav-link {
-      color: $white;
-      margin: 0;
-      font-size: 14px;
-      line-height: 20px;
-      padding: 15px 16px;
+  & > .collapse > ul {
+    & > .nav-item {
       @media (min-width: $breakpoint-xl) {
-        padding: 35px 20px;
-        transition: ease 0.2s;
+        height: 90px;
       }
       &:hover {
         @media (min-width: $breakpoint-xl) {
-          color: $gray_nobel;
+          .collapse {
+            visibility: visible;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0;
+          }
         }
       }
     }
-  }
-  & > .collapsing > ul > li > .mini-hamberger-header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    & > .nav-link {
-      color: $white;
-      margin: 0;
-      font-size: 14px;
-      line-height: 20px;
-      padding: 15px 16px;
-    }
-  }
-  & > .collapse > ul > li > .collapsing {
-    background-color: $black;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    @media (min-width: $breakpoint-xl) {
-      visibility: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-    .dropdown-item {
-      color: $white;
-      padding: 15px 28px;
-      font-size: 14px;
-      line-height: 20px;
-    }
-  }
-  & > .collapse > ul > li > .collapse {
-    background-color: $black;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    @media (min-width: $breakpoint-xl) {
-      visibility: hidden;
-      display: flex;
-      flex-direction: column;
-      width: 220px;
-    }
-    .dropdown-item {
-      color: $white;
-      padding: 15px 28px;
-      font-size: 14px;
-      line-height: 20px;
-      transition: ease 0.2s;
+    & > .dropdown {
       @media (min-width: $breakpoint-xl) {
-        padding: 18px;
+        width: 103px;
       }
-      &:hover {
+    }
+    & > li {
+      & > .collapse {
         background-color: $black;
+        padding: 0;
+        margin: 0;
+        border: 0;
         @media (min-width: $breakpoint-xl) {
-          background-color: $orange_bistre;
-        }
-      }
-    }
-  }
-  & > .collapse > ul > .nav-item {
-    @media (min-width: $breakpoint-xl) {
-      height: 90px;
-    }
-    &:hover {
-      @media (min-width: $breakpoint-xl) {
-        .collapse {
-          visibility: visible;
+          visibility: hidden;
           display: flex;
           flex-direction: column;
-          border-radius: 0;
+          width: 220px;
+        }
+        .dropdown-item {
+          color: $white;
+          padding: 15px 28px;
+          font-size: 14px;
+          line-height: 20px;
+          transition: ease 0.2s;
+          @media (min-width: $breakpoint-xl) {
+            padding: 18px;
+          }
+          &:hover {
+            background-color: $black;
+            @media (min-width: $breakpoint-xl) {
+              background-color: $orange_bistre;
+            }
+          }
+        }
+      }
+      & > .collapsing {
+        background-color: $black;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        .dropdown-item {
+          color: $white;
+          padding: 15px 28px;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+      & > .nav-link {
+        color: $white;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 15px 16px;
+        margin: 0;
+        &:hover {
+          color: $white;
+          text-decoration: none;
+        }
+        @media (min-width: $breakpoint-xl) {
+          padding: 35px 20px;
+          transition: ease 0.2s;
+          &:hover {
+            @media (min-width: $breakpoint-xl) {
+              color: $gray_nobel;
+            }
+          }
+        }
+      }
+      & > .mini-hamberger-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        & > .nav-link {
+          color: $white;
+          margin: 0;
+          font-size: 14px;
+          line-height: 20px;
+          padding: 15px 16px;
+          @media (min-width: $breakpoint-xl) {
+            padding: 35px 20px;
+            transition: ease 0.2s;
+          }
+          &:hover {
+            @media (min-width: $breakpoint-xl) {
+              color: $gray_nobel;
+            }
+          }
         }
       }
     }
   }
-}
-@media (min-width: $breakpoint-xl) {
-  .navbar {
-    position: relative;
-    & > .collapse {
-      position: absolute;
-      top: 0;
-      right: 0;
+  & > .collapsing > ul > li {
+    & > .nav-link {
+      color: $white;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 15px 16px;
+      margin: 0;
     }
-  }
-  .dropdown {
-    width: 103px;
+    & > .mini-hamberger-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      & > .nav-link {
+        color: $white;
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 15px 16px;
+      }
+    }
   }
 }
