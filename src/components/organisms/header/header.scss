@@ -9,11 +9,6 @@
     background-color: $black_50;
     padding: 0 30px;
     position: relative;
-    & > .collapse {
-      position: absolute;
-      top: 0;
-      right: 15px;
-    }
   }
   .hamberger-header {
     height: 60px;
