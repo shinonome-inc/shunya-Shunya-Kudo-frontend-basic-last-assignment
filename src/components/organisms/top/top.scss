@@ -3,11 +3,10 @@
   .top-mini {
     position: relative;
     .image-top {
-      height: 100vw;
       width: 100%;
+      object-fit: cover;
       @media (max-width: $breakpoint-lg) {
         height: 360px;
-        object-fit: cover;
       }
     }
     .top-image-text {
