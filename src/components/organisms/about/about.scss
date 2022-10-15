@@ -1,0 +1,25 @@
+@use "../../variables" as *;
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  .image-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media (max-width: $breakpoint-lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+    .image-about1,
+    .image-about2,
+    .image-about3,
+    .image-about4 {
+      width: 100%;
+    }
+  }
+  & > .molecules-message {
+    background-color: $white_smoke;
+    .message-title {
+      color: $orange_bistre;
+    }
+  }
+}
