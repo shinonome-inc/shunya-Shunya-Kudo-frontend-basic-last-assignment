@@ -23,7 +23,7 @@
       height: 315.688232421875px;
       @media (min-width: $breakpoint-md) {
         height: 193.1972198486328px;
-        width: 100%;
+        object-fit: cover;
       }
     }
     &:nth-of-type(1) {
