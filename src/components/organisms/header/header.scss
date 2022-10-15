@@ -97,7 +97,7 @@
       padding: 15px 16px;
     }
   }
-  & > .collapse > ul > li > .dropdown-menu {
+  & > .collapse > ul > li > .collapsing {
     background-color: $black;
     padding: 0;
     margin: 0;
@@ -106,6 +106,24 @@
       visibility: hidden;
       display: flex;
       flex-direction: column;
+    }
+    .dropdown-item {
+      color: $white;
+      padding: 15px 28px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  & > .collapse > ul > li > .collapse {
+    background-color: $black;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    @media (min-width: $breakpoint-xl) {
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      width: 220px;
     }
     .dropdown-item {
       color: $white;
@@ -124,14 +142,32 @@
       }
     }
   }
-  & > .collapse > ul > .nav-item:hover {
+  & > .collapse > ul > .nav-item {
     @media (min-width: $breakpoint-xl) {
-      .dropdown-menu {
-        visibility: visible;
-        display: flex;
-        flex-direction: column;
-        border-radius: 0;
+      height: 90px;
+    }
+    &:hover {
+      @media (min-width: $breakpoint-xl) {
+        .collapse {
+          visibility: visible;
+          display: flex;
+          flex-direction: column;
+          border-radius: 0;
+        }
       }
     }
+  }
+}
+@media (min-width: $breakpoint-xl) {
+  .navbar {
+    position: relative;
+    & > .collapse {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .dropdown {
+    width: 103px;
   }
 }
