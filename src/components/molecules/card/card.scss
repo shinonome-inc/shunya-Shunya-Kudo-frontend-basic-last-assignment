@@ -5,9 +5,13 @@
   border-radius: 0;
   .card-img-top {
     transition: ease 0.5s;
+    border-radius: 0;
+    @media (max-width: $breakpoint-md) {
+      height: 224px;
+    }
     &:hover {
       transform: scale(1.2);
-      @media (max-width: $breakpoint-sm) {
+      @media (max-width: $breakpoint-md) {
         transform: none;
       }
     }
