@@ -1,22 +1,7 @@
 @use "../../variables" as *;
 
 .cards {
-  @media (min-width: $breakpoint-md) {
-    display: flex;
-    flex-direction: row;
-  }
   .card {
-    margin-top: 40px;
-    @media (min-width: $breakpoint-md) {
-      margin-top: 0;
-      margin-left: 24px;
-      &:first-of-type {
-        margin-left: 0;
-      }
-    }
-    &:first-of-type {
-      margin-top: 0;
-    }
     .card-img-top {
       height: 316px;
       @media (min-width: $breakpoint-md) {
