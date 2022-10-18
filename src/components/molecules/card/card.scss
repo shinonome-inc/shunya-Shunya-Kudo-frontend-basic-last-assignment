@@ -2,16 +2,17 @@
 .card {
   border: none;
   border-radius: 0px;
-  position: relative;
   .card-img {
     overflow: hidden;
     border-radius: 0;
+    position: relative;
     .card-img-top {
       transition: ease 0.5s;
       border-radius: 0;
       object-fit: cover;
+      height: 193px;
       @media (max-width: $breakpoint-md) {
-        height: 224px;
+        height: 316px;
       }
       &:hover {
         transform: scale(1.2);
