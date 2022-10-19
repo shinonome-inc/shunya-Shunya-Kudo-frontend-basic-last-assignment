@@ -1,0 +1,7 @@
+@use "../../variables" as *;
+
+@media (max-width: $breakpoint-md) {
+  .container .cards .card:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
