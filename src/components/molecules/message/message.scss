@@ -11,6 +11,7 @@
     font-family: $fontfamily-mincho;
     font-size: $fontsize-xl;
     line-height: 54px;
+    font-weight: 400;
     @media (max-width: $breakpoint-lg) {
       margin-bottom: 6px;
       font-size: $fontsize-l;
