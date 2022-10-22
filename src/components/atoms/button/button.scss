@@ -17,14 +17,14 @@
     text-decoration: none;
   }
 }
-@media (max-width: $breakpoint-md) {
+@media (max-width: $breakpoint-lg) {
   .atoms-button {
     width: 150px;
     height: 55px;
   }
 }
 
-@media (max-width: $breakpoint-sm) {
+@media (max-width: $breakpoint-md) {
   .atoms-button {
     width: 180px;
     height: 45px;
