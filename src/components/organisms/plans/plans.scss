@@ -4,13 +4,16 @@
     & > div > .message-title {
       color: $orange_bistre;
     }
-    .row .molecules-plan:nth-of-type(2) {
-      padding-left: 0;
-      padding-right: 0;
-      height: fit-content;
-      @media (max-width: $breakpoint-md) {
-        margin-left: 15px;
-        margin-right: 15px;
+    .row {
+      gap: 15px;
+      & > .molecules-plan:nth-of-type(2) {
+        padding-left: 0;
+        padding-right: 0;
+        height: fit-content;
+        @media (max-width: $breakpoint-md) {
+          margin-left: 15px;
+          margin-right: 15px;
+        }
       }
     }
     .center {
