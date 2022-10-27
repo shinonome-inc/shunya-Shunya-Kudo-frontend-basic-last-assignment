@@ -86,6 +86,13 @@
           .event-caption {
             width: calc(100% - 207px);
             padding: 0 24px;
+            & > h3 {
+              white-space: normal;
+              display: -webkit-box;
+              overflow: hidden;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;
+            }
           }
         }
       }

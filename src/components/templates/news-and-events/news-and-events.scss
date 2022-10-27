@@ -2,12 +2,14 @@
 
 .news-and-events {
   background-color: $white_smoke;
-  padding-top: 56px;
-  padding-bottom: 56px;
-  .row {
-    @media (max-width: $breakpoint-lg) {
-      display: flex;
-      gap: 35px;
+  .container {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    .row {
+      @media (max-width: $breakpoint-lg) {
+        display: flex;
+        gap: 35px;
+      }
     }
   }
 }
