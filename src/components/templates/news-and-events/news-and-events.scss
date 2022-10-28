@@ -2,14 +2,21 @@
 
 .news-and-events {
   background-color: $white_smoke;
-  .container {
-    padding-top: 56px;
-    padding-bottom: 56px;
-    .row {
-      @media (max-width: $breakpoint-lg) {
-        display: flex;
-        gap: 35px;
-      }
+  padding: 56px 16px;
+  margin: 0;
+  @media (min-width: $breakpoint-lg) {
+    padding-bottom: 94px;
+    .organisms-news {
+      padding-left: 0;
+    }
+    .events {
+      padding-right: 0;
+    }
+  }
+  .row {
+    @media (max-width: $breakpoint-lg) {
+      display: flex;
+      gap: 35px;
     }
   }
 }
