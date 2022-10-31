@@ -1,29 +1,28 @@
 @use "../../variables" as *;
-.container {
-  .plans {
-    & > div > .message-title {
-      color: $orange_bistre;
-    }
-    .row {
-      gap: 15px;
-      & > .molecules-plan:nth-of-type(2) {
-        padding-left: 0;
-        padding-right: 0;
-        height: fit-content;
-        @media (max-width: $breakpoint-md) {
-          margin-left: 15px;
-          margin-right: 15px;
-        }
+
+.plans {
+  & > div > .message-title {
+    color: $orange_bistre;
+  }
+  .row {
+    gap: 15px;
+    & > .molecules-plan:nth-of-type(2) {
+      padding-left: 0;
+      padding-right: 0;
+      height: fit-content;
+      @media (max-width: $breakpoint-md) {
+        margin-left: 15px;
+        margin-right: 15px;
       }
     }
-    .center {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 35px;
-      @media (min-width: $breakpoint-md) {
-        margin-top: 40px;
-        margin-bottom: 100px;
-      }
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    @media (min-width: $breakpoint-md) {
+      margin-top: 40px;
+      margin-bottom: 100px;
     }
   }
 }
