@@ -1,0 +1,23 @@
+@use "../../variables" as *;
+
+.news-and-events {
+  background-color: $white_smoke;
+  padding: 56px 16px;
+  @media (min-width: $breakpoint-lg) {
+    padding-bottom: 94px;
+    .organisms-news {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+    .events {
+      padding-right: 0;
+      padding-left: 20px;
+    }
+  }
+  .row {
+    @media (max-width: $breakpoint-lg) {
+      display: flex;
+      gap: 35px;
+    }
+  }
+}

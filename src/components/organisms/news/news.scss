@@ -3,14 +3,23 @@
 .organisms-news {
   display: flex;
   flex-direction: column;
+  & > .news-and-events-title > h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    @media (min-width: $breakpoint-lg) {
+      line-height: 57px;
+      font-size: 40px;
+    }
+  }
   .news-list {
     display: block;
     margin-bottom: 30px;
     .news-card {
       & > a {
-        height: 85px;
         text-decoration: none;
         .news-caption {
+          height: 84px;
           background-color: $white;
           border: 1px solid $gray_gainsboro;
           display: flex;
@@ -27,6 +36,7 @@
             width: 100%;
             transition: ease 0.2s;
             margin-bottom: 0;
+            font-weight: 400;
             &:hover {
               color: $orange_bistre;
             }
