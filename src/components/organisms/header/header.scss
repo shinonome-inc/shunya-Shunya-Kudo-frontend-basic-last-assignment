@@ -3,12 +3,13 @@
 .navbar {
   background-color: $black;
   padding: 0;
+  z-index: 100;
   @media (min-width: $breakpoint-xl) {
     height: 90px;
     width: 100%;
     background-color: $black_50;
     padding: 0 30px;
-    position: relative;
+    position: absolute !important;
   }
   .hamberger-header {
     height: 60px;
@@ -73,6 +74,7 @@
           font-size: 14px;
           line-height: 20px;
           transition: ease 0.2s;
+          z-index: 100;
           @media (min-width: $breakpoint-xl) {
             padding: 18px;
           }
