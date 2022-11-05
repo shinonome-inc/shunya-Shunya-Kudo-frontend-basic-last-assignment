@@ -32,6 +32,10 @@ section {
     height: 45px;
   }
 }
+.assignment-example-button {
+  color: red;
+  font-size: 16px;
+}
 .card {
   border: none;
   border-radius: 0;
@@ -90,10 +94,6 @@ section {
   text-align: left;
   margin-bottom: 0;
   padding-bottom: 30px;
-}
-.assignment-example-button {
-  color: red;
-  font-size: 16px;
 }
 .molecules-message {
   text-align: center;
@@ -461,60 +461,6 @@ footer .footer-copyright > p {
   font-size: 12px;
   line-height: 12px;
 }
-.organisms-news {
-  display: flex;
-  flex-direction: column;
-}
-.organisms-news > .news-and-events-title > h2 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 29px;
-}
-@media (min-width: 992px) {
-  .organisms-news > .news-and-events-title > h2 {
-    line-height: 57px;
-    font-size: 40px;
-  }
-}
-.organisms-news .news-list {
-  display: block;
-  margin-bottom: 30px;
-}
-.organisms-news .news-list .news-card > a {
-  text-decoration: none;
-}
-.organisms-news .news-list .news-card > a .news-caption {
-  height: 84px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-.organisms-news .news-list .news-card > a .news-caption .news-title {
-  color: #000;
-  font-size: 16px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  line-height: 23px;
-  width: 100%;
-  transition: ease 0.2s;
-  margin-bottom: 0;
-  font-weight: 400;
-}
-.organisms-news .news-list .news-card > a .news-caption .news-title:hover {
-  color: #442606;
-}
-.organisms-news .news-list .news-card > a .news-caption .news-posted {
-  margin-bottom: 10px;
-  color: #999;
-  font-size: 12px;
-  line-height: 12px;
-}
-.organisms-news .news-list .news-card:not(:first-child) > a .news-caption {
-  border-top: none;
-}
 .navbar {
   background-color: #000;
   padding: 0;
@@ -594,7 +540,6 @@ footer .footer-copyright > p {
   padding: 15px 28px;
   font-size: 14px;
   line-height: 20px;
-  transition: ease 0.2s;
   z-index: 100;
 }
 @media (min-width: 1200px) {
@@ -604,6 +549,7 @@ footer .footer-copyright > p {
 }
 .navbar > .collapse > ul > li > .collapse .dropdown-item:hover {
   background-color: #000;
+  transition: ease 0.2s;
 }
 @media (min-width: 1200px) {
   .navbar > .collapse > ul > li > .collapse .dropdown-item:hover {
@@ -689,6 +635,60 @@ footer .footer-copyright > p {
   font-size: 14px;
   line-height: 20px;
   padding: 15px 16px;
+}
+.organisms-news {
+  display: flex;
+  flex-direction: column;
+}
+.organisms-news > .news-and-events-title > h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+}
+@media (min-width: 992px) {
+  .organisms-news > .news-and-events-title > h2 {
+    line-height: 57px;
+    font-size: 40px;
+  }
+}
+.organisms-news .news-list {
+  display: block;
+  margin-bottom: 30px;
+}
+.organisms-news .news-list .news-card > a {
+  text-decoration: none;
+}
+.organisms-news .news-list .news-card > a .news-caption {
+  height: 84px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.organisms-news .news-list .news-card > a .news-caption .news-title {
+  color: #000;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 23px;
+  width: 100%;
+  transition: ease 0.2s;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.organisms-news .news-list .news-card > a .news-caption .news-title:hover {
+  color: #442606;
+}
+.organisms-news .news-list .news-card > a .news-caption .news-posted {
+  margin-bottom: 10px;
+  color: #999;
+  font-size: 12px;
+  line-height: 12px;
+}
+.organisms-news .news-list .news-card:not(:first-child) > a .news-caption {
+  border-top: none;
 }
 .plans > div > .message-title {
   color: #442606;
