@@ -79,7 +79,7 @@
           }
           &:hover {
             background-color: $black;
-            transition: ease 1.2s;
+            transition: ease 0.2s;
             @media (min-width: $breakpoint-xl) {
               background-color: $orange_bistre;
             }
