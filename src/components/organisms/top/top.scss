@@ -1,5 +1,9 @@
 @use "../../variables" as *;
 .top {
+  padding-bottom: 40px;
+  @media (max-width: $breakpoint-lg) {
+    padding-bottom: 30px;
+  }
   .top-mini {
     position: relative;
     .image-top {

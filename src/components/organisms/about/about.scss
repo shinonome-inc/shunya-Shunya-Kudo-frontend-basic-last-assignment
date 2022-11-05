@@ -3,6 +3,10 @@
 .about {
   margin: 0 auto;
   padding: 0;
+  padding-bottom: 40px;
+  @media (max-width: $breakpoint-lg) {
+    padding-bottom: 100px;
+  }
   .image-about {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
