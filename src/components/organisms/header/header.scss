@@ -73,13 +73,13 @@
           padding: 15px 28px;
           font-size: 14px;
           line-height: 20px;
-          transition: ease 0.2s;
           z-index: 100;
           @media (min-width: $breakpoint-xl) {
             padding: 18px;
           }
           &:hover {
             background-color: $black;
+            transition: ease 0.2s;
             @media (min-width: $breakpoint-xl) {
               background-color: $orange_bistre;
             }
