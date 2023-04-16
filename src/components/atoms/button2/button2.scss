@@ -1,0 +1,27 @@
+@use "../../variables" as *;
+
+.button {
+  width: 200px;
+  height: 55px;
+  background: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  transition: ease 0.2s;
+  font-size: 14px;
+  &:hover {
+    text-decoration: none;
+    color: $white;
+    background-color: $orange_bistre;
+  }
+  @media (max-width: $breakpoint-lg) {
+    width: 150px;
+  }
+  @media (max-width: $breakpoint-md) {
+    width: 180px;
+    height: 45px;
+  }
+}
+
+add->commit->push
